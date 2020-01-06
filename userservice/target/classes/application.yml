@@ -1,0 +1,18 @@
+server:
+  port: 8091
+spring:
+  application:
+    name: userservice
+  datasource:
+    url: jdbc:mysql://localhost:3306/day01
+    username: root
+    password: 123456
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8860/eureka
+  #instance:
+   # lease-expiration-duration-in-seconds: 120    #多久没反应eureka会认为此服务已挂
+   # lease-renewal-interval-in-seconds: 30  #每隔多久心跳一次
+mybatis:
+  type-aliases-package: com.hzit.user.pojo

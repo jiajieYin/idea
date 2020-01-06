@@ -1,0 +1,12 @@
+server:
+  port: 8860
+spring:
+    application:
+      name: eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8860/eureka
+    register-with-eureka: false
+  instance:
+    prefer-ip-address: true
